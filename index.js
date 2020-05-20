@@ -19,7 +19,7 @@ app.use(body_parser.urlencoded({ extended: true }));
 
 let db_handler;
 // const DB_URL = 'mongodb://localhost:27017';
-const DB_URL = 'mongodb+srv://lsimpson667:lsimpson667@candyrating-zpgze.mongodb.net/test?retryWrites=true&w=majority';
+const DB_URL = process.env.DB_URL;
 const DB_NAME = process.env.DB_NAME;
 const COLLECTION_NAME = 'candy';
 
