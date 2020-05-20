@@ -22,8 +22,8 @@ app.use(body_parser.urlencoded({ extended: true }));
 let db_handler;
 // const DB_URL = 'mongodb://localhost:27017';
 const DB_URL = process.env.DB_URL;
-const DB_NAME = "candyRatings";
-const COLLECTION_NAME = 'candy';
+const DB_NAME = process.env.DB_NAME;
+const COLLECTION_NAME = process.env.COLLECTION_NAME;
 
 app.listen(PORT, () => {
     console.log(`Server Started on Port: ${PORT}`);
